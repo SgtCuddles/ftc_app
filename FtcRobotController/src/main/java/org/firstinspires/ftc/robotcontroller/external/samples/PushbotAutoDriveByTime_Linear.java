@@ -56,7 +56,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  */
 
 @Autonomous(name="Pushbot: Auto Drive By Time", group="Pushbot")
-@Disabled
+@Enabled
 public class PushbotAutoDriveByTime_Linear extends LinearOpMode {
 
     /* Declare OpMode members. */
@@ -121,5 +121,21 @@ public class PushbotAutoDriveByTime_Linear extends LinearOpMode {
         telemetry.addData("Path", "Complete");
         telemetry.update();
         sleep(1000);
+    }
+
+    public void clawControl(int mode){
+        if(mode == 1){
+            //open claw
+        }else{
+            //close claw
+        }
+    }
+
+    public void armExtension(int mode){
+        if(mode == 1){
+            //extend arm
+        }else{
+            //retract arm
+        }
     }
 }

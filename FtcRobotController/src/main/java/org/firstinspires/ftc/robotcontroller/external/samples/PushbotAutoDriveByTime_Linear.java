@@ -123,19 +123,4 @@ public class PushbotAutoDriveByTime_Linear extends LinearOpMode {
         sleep(1000);
     }
 
-    public void clawControl(int mode){
-        if(mode == 1){
-            //open claw
-        }else{
-            //close claw
-        }
-    }
-
-    public void armExtension(int mode){
-        if(mode == 1){
-            //extend arm
-        }else{
-            //retract arm
-        }
-    }
 }
